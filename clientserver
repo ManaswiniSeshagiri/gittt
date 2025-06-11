@@ -1,0 +1,76 @@
+server
+ history
+    1  ip a s
+    2  vim /etc/hosts
+    3  hostname
+    4  vim /etc/hosts
+    5  cat /etc/hosts
+    6  vim /etc/ssh/sshd_config
+    7  systemctl restart sshd
+    8  systemctl enable sshd
+    9  passwd root
+   10  mkdir /pro/
+   11  cd /pro/
+   12  yum install git
+   13  git init --bare
+   14  history
+
+client 1
+
+ 1  ip a s
+    2  hostname
+    3  vim /etc/hosts
+    4  cat /etc/hosts
+    5  vim /etc/ssh/sshd_config
+    6  ssh-keygen
+    7  ssh-copy-id root@server.example.com
+    8  ssh root@server.example.com
+    9  mkdir /proo/
+   10  cd /proo/
+   11  yum install git
+   12  git init
+   13  vim index.txt
+   14  git add index.txt
+   15  git commit -m "first" index.txt
+   16  git remote add origin root@server.example.com
+   17  git remote add origin root@server.example.com:/pro
+   18  git remote remove origin
+   19  git remote add origin root@server.example.com:/pro
+   20  git push origin master
+   21  history
+
+client 2
+
+1  ip a s
+    2  hostname
+    3  vim /etc/hosts
+    4  cat /etc/hosts
+    5  vim /etc/ssh/sshd_config
+    6  ssh-keygen
+    7  ssh-copy-id root@server.example.com
+    8  ssh root@server.example.com
+    9  mkdir /prooo/
+   10  cd /prooo/
+   11  yum install git
+   12  git init
+   13  vim ind.txt
+   14  git add ind.txt
+   15  git commit -m "first" index.txt
+   16  git init
+   17  git remote add origin root@server.example.com
+   18  git remote remove origin
+   19  git remote add origin root@server.example.com:/pro
+   20  git pull origin master
+   21  cat index.html
+   22  cd /pro/
+   23  cd /pro
+   24  cd ..
+   25  cd /pro/
+   26  cd /pro
+   27  cd pro/
+   28  cd ..
+   29  ll
+   30  cd /prooo/
+   31  ll
+   32  cat index.txt
+   33  history
