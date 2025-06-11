@@ -24,7 +24,7 @@ client 1
     5  vim /etc/ssh/sshd_config
     6  ssh-keygen
     7  ssh-copy-id root@server.example.com
-    8  ssh root@server.example.com
+    8  ssh root@server.example.com (exit from server)
     9  mkdir /proo/
    10  cd /proo/
    11  yum install git
@@ -48,7 +48,7 @@ client 2
     5  vim /etc/ssh/sshd_config
     6  ssh-keygen
     7  ssh-copy-id root@server.example.com
-    8  ssh root@server.example.com
+    8  ssh root@server.example.com(exit from server)
     9  mkdir /prooo/
    10  cd /prooo/
    11  yum install git
