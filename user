@@ -1,0 +1,9 @@
+[root@server ~]# useradd manas
+[root@server ~]# groupadd sales
+[root@server ~]# groupadd marketing
+[root@server ~]# usermod -a -G sales manas
+[root@server ~]# usermod -a -G marketing manas
+[root@server ~]# cat /etc/group | grep -i sales
+sales:x:1002:manas
+[root@server ~]# cat /etc/group | grep -i marketing
+marketing:x:1003:manas
