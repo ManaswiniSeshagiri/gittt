@@ -1,0 +1,20 @@
+create 3 instances 
+server-1 linux,1a
+server-2 redhat,1b
+server-3 ubuntu,
+duplicate browser and open efs
+create file system-> name - my-efs
+access al servers from terminal
+yum install nfs-utils -y ( 1 and 2 )
+3 -> cat /os-release
+     apt-get update
+     apt install nfs-common
+1 & 2 => systemctl restart nfs-server (enable)
+3 => systemctl status nfs-common.service(unmask,enable,start,status)
+manage efs-> select new sg for all
+attach mount via ip
+ 1 => mkdir efs
+      ip
+      df -h
+      cd /root/efs/
+      touch devops.txt{1..10}
