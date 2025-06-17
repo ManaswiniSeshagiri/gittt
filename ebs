@@ -1,0 +1,30 @@
+n.v
+create instance server-n
+vol->existing vol>rename root_vol
+create vol>data-vol
+attach the volume
+instance open in terminal
+1  lsblk
+    2  mkdir /demo
+    3  mount /dev/xvdb /demo
+    4  df -h
+    5  cd /dem0
+    6  cd /demo
+    7  ll
+    8  history
+add some files and do ll
+ss>action>copy>add dest
+go to ohio 
+vol->existing vol>rename root_vol
+create vol>data-vol
+attach the volume
+instance open in terminal
+1  lsblk
+    2  mkdir /demo
+    3  mount /dev/xvdb /demo
+    4  df -h
+    5  cd /dem0
+    6  cd /demo
+    7  ll
+    8  history
+add some files and do ll
