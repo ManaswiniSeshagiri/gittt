@@ -1,0 +1,28 @@
+create vpc 10.0.0.0/16
+igw create
+subnets give 2 10.0.0.0/24,10.0.1.0/24
+dev-igw -> attaxch > vpc
+rt->public-rt,private-rt
+connect these to dev-igw
+duplicate browser
+go to ec2 -> instances 2 stances public and private
+terminal 
+sudo su -
+yum install httpd -y
+echo "   " > index.html
+ll
+systemctl start httpd(enable)
+ping ___ 
+cd
+vchange region to ohio do the same
+terminal
+sudo su -
+yum install httpd -y
+passwd root (in both)
+vim /etc/ssh/sshd_config
+systemctl restart sshd(enable)
+nv--
+cat > manas.txt
+scp manas.txt root@ip:/tmp
+
+
