@@ -1,0 +1,82 @@
+bucket created
+create user- policy attach s3fullaccess 
+click user- sec cred -create access key-cli -download csv and done
+create instance
+1  yum update -y
+
+    2  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+
+    3  unzip awscliv2.zip
+
+    4  sudo ./aws/install
+
+    5  yum install python* -y
+
+    6  yum install python
+
+    7  yum install python*
+
+    8  aws --version
+
+    9  aws configure
+
+   10  ll
+
+   11  cd .aws/
+
+   12  cat config
+
+   13  cat credntials
+
+   14  sudo yum install automake fuse fuse-devel gcc-c++ git libcurl-devel libxml2-devel make openssl-devel
+
+   15  git clone https://github.com/s3fs-fuse/s3fs-fuse.git
+
+   16  ll
+
+   17  ./autogen.sh
+
+   19  cd  s3fs-fuse
+
+   20  ./autogen.sh
+
+   21  ./configure --prefix=/usr --with-openssl
+
+   22  make
+
+   23  sudo make install
+
+   24  touch /etc/passwd-s3fs
+
+   25  vim /etc/passwd-s3fs
+
+   26  touch /etc/passwd-s3fs
+
+   27  vim /etc/passwd-s3fs
+
+   28  sudo chmod 640 /etc/passwd-s3fs
+
+   29  s3fs 15june25  /mnt -o passwd_file=/etc/passwd-s3fs
+
+   30  df -h
+
+   31  s3fs -o iam_role="s3role" -o url="https://s3-ap-south-1.amazonaws.com" -o endpoint=ap-south-1 -o dbglevel=info -o curldbg -o allow_other -o use_cache=/tmp sanjaynetwork /var/s3fs-demofs
+
+   32  cd /mnt
+
+   33  s3fs -o iam_role="s3role" -o url="https://s3-ap-south-1.amazonaws.com" -o endpoint=ap-south-1 -o dbglevel=info -o curldbg -o allow_other -o use_cache=/tmp sanjaynetwork /var/s3fs-demofs
+
+   34  ll
+
+   35  vim pav.txt
+
+   36  cd
+
+   37  cd /mnt
+
+   38  vim sp.txt
+
+   39  ll
+GitHub - s3fs-fuse/s3fs-fuse: FUSE-based file system backed by Amazon S3
+FUSE-based file system backed by Amazon S3. Contribute to s3fs-fuse/s3fs-fuse development by creating an account on GitHub.
+ 
