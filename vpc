@@ -1,0 +1,14 @@
+create vpc
+create igw
+create 2 subnets
+create 2 root tables
+public- add igw
+private - add nats gateway
+sudo su -
+yum install httpd -y
+vim /var/www/html/index.html
+systemctl restart httpd(enable)
+vim keyyy
+paste the key from notepad
+private instance connect "ssh -i"
+ping google.com
